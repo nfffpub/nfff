@@ -18,7 +18,7 @@ jsproxy_config({
         [location.host]: 1,
       }
     },
-    'cfworker': {
+    'default': {
       label: '默认节点',
       hidden: false,
       lines: {
