@@ -14,7 +14,7 @@ jsproxy_config({
   node_map: {
     'cfworker': {
       label: '当前节点',
-      hidden: true,
+      hidden: false,
       lines: {
         'p.nicu.workers.dev': 1,
         'p.acucu.workers.dev': 1,
