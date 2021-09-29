@@ -12,8 +12,14 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
+    'current': {
+      label: '请选择节点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
     'cfworker': {
-      label: '当前节点',
+      label: '默认节点',
       hidden: false,
       lines: {
         'p.nicu.workers.dev': 1,
@@ -28,7 +34,7 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  node_default: 'cfworker',
+  node_default: 'current',
   // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
