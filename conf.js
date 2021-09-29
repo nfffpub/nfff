@@ -12,10 +12,15 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'mysite': {
-      label: '当前站点',
+    'cfworker': {
+      label: '当前节点',
+      hidden: true,
       lines: {
-        [location.host]: 1,
+        'p.nicu.workers.dev': 1,
+        'p.acucu.workers.dev': 1,
+        'p.aukcu.workers.dev': 1,
+        'p.kkucu.workers.dev': 1,
+        'p.qkucu.workers.dev': 1,
       }
     }
   },
